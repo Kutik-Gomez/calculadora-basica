@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh; /* Establece la altura del body al 100% del viewport */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Margen superior para el contenedor */
+}
+
+.cambiarFondo {
+    background-color: #0fcedc;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px; /* Espacio entre el botón y la calculadora */
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cambiarFondo:hover {
+    background-color: #02b1be;
+}
+#calculadora{
+    width: 350px;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: grid;
+    padding: 40px;
+    margin: 0 auto; /* Centra la calculadora horizontalmente */
+}
+.btn {
+    background-color: rgb(221, 221, 221);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+   }
+   
+.btn:hover {
+    background-color: #22c2ea;
+    box-shadow: 0 0 5px rgba(1, 183, 255, 0.5);
+    color: yellow;
+}
+#pantalla {
+    height: 120px;
+    width: 314px;
+    margin-bottom: 10px;
+    font-size: 50px; /* Cambiar el tamaño de la fuente */
+    text-align: right; /* Alinear el texto a la derecha */
+}
+
+#ope{
+    background-color: #40d1f5;
+    
+}
+#opereliminar{
+    background-color: #f60014;
+    color: aliceblue;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link id="estilos" rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <button class="cambiarFondo" onclick="cambiarEstilos()" 
+        ondblclick="restaurarEstilos()"  > <i class="fas fa-paint-brush"></i> Cambiar Fondo  
+    </button>
+
+        <div id="calculadora">
+            <input type="text" id="pantalla" disabled>
+            <div id="botones">
+
+                <button class="btn" id="opereliminar" onclick="limpiar()" style="padding: 15px 26px;"> AC </button>
+                <button class="btn" id="ope" onclick="eliminarUltimoCaracter()" style="padding: 15px 29px;"> &#8592; </button>
+                <button class="btn" id="ope" onclick="agregar('*')"> * </button>
+                <button class="btn" id="ope" onclick="agregar('/')"> / </button>
+
+                <button class="btn" onclick="agregar('7')">7</button>
+                <button class="btn" onclick="agregar('8')">8</button>
+                <button class="btn" onclick="agregar('9')">9</button>
+                <button class="btn" id="ope" onclick="agregar('+')" style="padding: 15px 30px;"> +</button>
+
+                <button class="btn" onclick="agregar('4')">4</button>
+                <button class="btn" onclick="agregar('5')">5</button>
+                <button class="btn" onclick="agregar('6')">6</button>
+
+                <button class="btn" id="ope" onclick="agregar('-')">-</button>
+                <button class="btn" onclick="agregar('1')">1</button>
+                <button class="btn" onclick="agregar('2')">2</button>
+                <button class="btn" onclick="agregar('3')">3</button>
+                <button class="btn" id="ope" onclick="agregarPorcentaje()" style="padding: 15px 27px;">%</button>
+                <button class="btn" onclick="agregar('0')" style="padding: 15px 74px;"> 0 </button>
+                <button class="btn" onclick="agregar('.')">.</button>
+
+                <button class="btn" id="ope" onclick="calcular('=')">= </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="funciones.js"></script>
+</body>
+
+</html>

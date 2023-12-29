@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh; /* Establece la altura del body al 100% del viewport */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Margen superior para el contenedor */
+}
+
+.cambiarFondo {
+    background-color: #0fcedc;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px; /* Espacio entre el botón y la calculadora */
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cambiarFondo:hover {
+    background-color: rgb(3, 180, 224);
+}
+#calculadora {
+    width: 350px;
+    border: 2px solid white;
+    background-color: rgb(57, 53, 53);
+    border-radius: 10px;
+    display: grid;
+    padding: 40px;
+    margin: 0 auto; /* Centra la calculadora horizontalmente */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Agrega una sombra blanca */
+}
+
+#calculadora:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Cambia la sombra al pasar el mouse */
+}
+
+.btn {
+    background-color: white;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+     /* Agrega una sombra blanca */
+   }
+   
+.btn:hover {
+    background-color: #e5ecf2;
+    color: orange;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+#pantalla {
+    height: 120px;
+    width: 314px;
+    margin-bottom: 10px;
+    font-size: 50px; /* Cambiar el tamaño de la fuente */
+    text-align: right; /* Alinear el texto a la derecha */
+    color: white;
+    background-color: rgb(73, 69, 69);
+    
+}
+
+#ope{
+    background-color: #f7ff04;
+    
+}
+#opereliminar{
+    background-color: #f60014;
+    color: aliceblue;
+}
